@@ -1,5 +1,5 @@
 import React from "react";
-import { render, fireEvent, wait } from "@testing-library/react";
+import { render, fireEvent } from "@testing-library/react";
 import BoxList from "./Boxlist";
 
 function addBox(boxList, height = "100", width = "100", color = "peachpuff") {

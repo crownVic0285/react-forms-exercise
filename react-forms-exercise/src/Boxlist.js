@@ -4,12 +4,12 @@ import NewBoxForm from './NewBoxForm';
 
 function BoxList() {
     const [boxes, setBoxes] = useState([]);
-    const addBox = box => {
+    function addBox(box) {
         setBoxes(boxes => [...boxes, box]);
-    };
-    const removeBox = id => {
+    }
+    function removeBox(id) {
         setBoxes(boxes => boxes.filter(box => box.id !== id));
-    };
+    }
 
     const boxComponents = boxes.map(box => (
         <Box
